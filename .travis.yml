@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- 6
+- 5
+- 4
+notifications:
+  email: false
+  webhooks:
+    urls:
+    - https://webhooks.gitter.im/e/117063f9c1031b17e557
+    on_start: never
+    on_failure: change
+deploy:
+  provider: npm
+  email: hello@mylisabox.com
+  api_key:
+    secure: FPdX+HrTSmDBl6G4wY3BOTMtRKNkhgNA/UIUjBvnj6ZG9CJ+LJnXd3fXGxwKIoQz7tiL0Y1jPfnI5KozN9WSpqXnmKNUMC42wCwWJ7UibiY4wmqFGcm0JGjNHZS4R2def9i6y9k/BEX2vQASw+xE3bKWCmPnprqX3sbkkk4X4ifNZTUsbpVftuYII4QX4nvOo5LIL2jsTjmdrimfLcWuSe2gXWVjHpMMdV5BOFEQAPTx8WnuthlPnThavZS8vA0k7E9Wzz/bGs8hKXjo294Dlm2J2LPjEPwdWrC3HQrycQheFVRRzg7n6mfOTWIkPj0SA69/sBpldgPL7X4wSJ1PUi2M28npNk1uvqe5mdKWz+Qe0LsTzApV3AiFwrZ0oSFF+bzwFmF/237IRlUQQXF2olhJk2bfljhaOQ6zok1eZLOa8acdQs4n0kl2tA7Pua3RXMyk0/wWm2UuLoO/Q+wFhPfxVtBY9n1shmG+YAZOWpP1Fo/qZ+ReXzCRj+4wbTxe5alunj9a/RlsgUpIFuZLj5+q4dXerQ3xMvGp38HUzpQokHZL+rN1bylM+RTKyn4CnP0bGh2l8UneFmcbwAKRlplh7VDITvDkjKHB1EsdhbMt7yXCkmH1QMgHjjmleGRY0HJT3II6cTs+DMtGFLRzYrBAdvfrsE4qKbF+o6L8BaM=
+  on:
+    tags: true
+    repo: mylisabox/generator-lisa
