@@ -8,7 +8,14 @@ const TEMPLATE = path.join(path.dirname(require.resolve('lisa-plugin')), 'archet
 
 
 module.exports = function () {
-  this.fs.copyTpl(path.resolve(TEMPLATE, '**'), this.destinationPath(), {
+  // Copy all files
+  this.fs.copyTpl(path.resolve(TEMPLATE, '**', '*'), this.destinationRoot(), {
     name: this['plugin-name']
   })
+
+  // Copy all dotfiles
+  this.fs.copyTpl(
+    path.resolve(TEMPLATE, '**', '.*'),
+    this.destinationRoot()
+  )
 }

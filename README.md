@@ -1,6 +1,7 @@
 # generator-lisa
 
 [![Gitter][gitter-image]][gitter-url]
+[![Known Vulnerabilities][snyk-image]][snyk-url]
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][npm-download]][npm-url]
 [![Build Status][ci-image]][ci-url]
@@ -12,6 +13,8 @@ Yo generator to generate L.I.S.A. components
 
 WORK IN PROGRESS
 
+[snyk-image]: https://snyk.io/test/github/mylisabox/generator-lisa/badge.svg
+[snyk-url]: https://snyk.io/test/github/mylisabox/generator-lisa/
 [npm-image]: https://img.shields.io/npm/v/generator-lisa.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/generator-lisa
 [ci-image]: https://img.shields.io/travis/mylisabox/generator-lisa.svg?style=flat-square&label=Linux%20/%20OSX

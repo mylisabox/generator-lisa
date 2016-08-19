@@ -16,8 +16,7 @@ describe('generator-lisa:plugin', ()=> {
     assert.file([
       'package.json',
       'test/mocha.opts',
-      //'test/.eslintrc.json',
-      'test/app.js',
+      'test/.eslintrc.json',
       'test/index.js'
     ])
   })

@@ -16,7 +16,9 @@
     "yeoman-generator"
   ],
   "scripts": {
-    "test": "eslint . && mocha"
+    "test": "snyk test && eslint . && mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,8 @@
     "lisa-box": "^0.0.2",
     "lisa-plugin": "^0.0.2",
     "yeoman-generator": "^0.24.1",
-    "yosay": "^1.2.0"
+    "yosay": "^1.2.0",
+    "snyk": "^1.18.0"
   },
   "devDependencies": {
     "eslint": "^3.3.1",
@@ -45,5 +48,6 @@
     "env": {
       "mocha": true
     }
-  }
+  },
+  "snyk": true
 }

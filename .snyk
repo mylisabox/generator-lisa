@@ -1,0 +1,21 @@
+version: v1.5.2
+ignore: {}
+patch:
+  'npm:negotiator:20160616':
+    - lisa-plugin > lisa-box > trailpack-realtime > engine.io > accepts > negotiator:
+        patched: '2016-08-19T18:58:39.755Z'
+    - lisa-plugin > lisabox > trailpack-realtime > engine.io > accepts > negotiator:
+        patched: '2016-08-19T18:58:39.755Z'
+    - lisa-plugin > engine.io > accepts > negotiator:
+        patched: '2016-08-19T18:58:39.755Z'
+    - lisa-box > trailpack-realtime > engine.io > accepts > negotiator:
+        patched: '2016-08-19T18:58:39.755Z'
+  'npm:ws:20160624':
+    - lisa-plugin > lisa-box > trailpack-realtime > engine.io > ws:
+        patched: '2016-08-19T18:58:39.755Z'
+    - lisa-plugin > lisabox > trailpack-realtime > engine.io > ws:
+        patched: '2016-08-19T18:58:39.755Z'
+    - lisa-plugin > engine.io > ws:
+        patched: '2016-08-19T18:58:39.755Z'
+    - lisa-box > trailpack-realtime > engine.io > ws:
+        patched: '2016-08-19T18:58:39.755Z'
