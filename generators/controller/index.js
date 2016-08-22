@@ -4,14 +4,14 @@ const generatorArguments = require('./arguments')
 const generatorOptions = require('./options')
 const generatorSteps = require('./steps')
 
-module.exports = class PluginGenerator extends yeoman.Base {
+module.exports = class ControllerGenerator extends yeoman.Base {
   constructor(arg0, arg1) {
     super(arg0, arg1)
 
     Object.keys(generatorArguments).forEach(key => this.argument(key, generatorArguments[key]))
     Object.keys(generatorOptions).forEach(key => this.option(key, generatorOptions[key]))
 
-    this.description = 'Create new L.I.S.A. plugin'
+    this.description = 'Create new L.I.S.A. plugin controller'
   }
 
   get configuring() {

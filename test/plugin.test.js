@@ -4,7 +4,7 @@ const assert = require('yeoman-assert')
 const helpers = require('yeoman-test')
 const fs = require('fs')
 
-describe('generator-lisa:plugin', ()=> {
+describe('lisa:plugin', ()=> {
   before(() => {
     return helpers.run(path.join(__dirname, '../generators/plugin'))
       .withPrompts({someAnswer: true})
