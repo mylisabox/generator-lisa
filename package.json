@@ -16,10 +16,13 @@
     "yeoman-generator"
   ],
   "scripts": {
-    "test": "eslint . && mocha",
+    "test": "snyk test && eslint . && mocha",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect",
-    "publish": "npm version patch && git push --tags && git push"
+    "publishPatch": "npm version patch && npm run push",
+    "publishMinor": "npm version minor && npm run push",
+    "publishMajor": "npm version major && npm run push",
+    "push": "git push --tags && git push"
   },
   "repository": {
     "type": "git",

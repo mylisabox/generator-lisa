@@ -13,6 +13,44 @@ Yo generator to generate L.I.S.A. components
 
 WORK IN PROGRESS
 
+Trails Yeoman Generator.
+
+## Usage
+```sh
+$ yo lisa --help
+
+Usage:
+  yo lisa [options] 
+
+Options:
+        --help          # Print the generator's options and usage
+        --skip-cache    # Do not remember prompt answers             Default: false
+        --skip-install  # Do not automatically install dependencies  Default: false
+        --skip-update   # Do not check for generator's updates       Default: false
+
+Generators:
+
+  Create New L.I.S.A. project 
+    yo lisa
+
+  Create New L.I.S.A. plugin
+    yo lisa:plugin <plugin-name>
+
+  Create New L.I.S.A. plugin Controller
+    yo lisa:controller <controller-name>
+
+  Create New L.I.S.A. plugin Service
+    yo lisa:service <service-name>
+```
+
+## Contributing
+We love contributions! Please see our [Contribution Guide](https://github.com/mylisabox/lisa-box/blob/master/.github/CONTRIBUTING.md)
+for more information.
+
+## License
+[MIT](https://github.com/mylisabox/generator-lisa/blob/master/LICENSE)
+
+
 [snyk-image]: https://snyk.io/test/github/mylisabox/generator-lisa/badge.svg
 [snyk-url]: https://snyk.io/test/github/mylisabox/generator-lisa/
 [npm-image]: https://img.shields.io/npm/v/generator-lisa.svg?style=flat-square
