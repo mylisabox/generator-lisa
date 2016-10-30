@@ -37,7 +37,7 @@
     "falafel": "^1.2.0",
     "lisa-box": "^0.0.4",
     "detect-conflict": "^1.0.0",
-    "lisa-plugin": "^0.0.4",
+    "lisa-plugin": "^0.0.6",
     "path-exists": "^3.0.0",
     "snyk": "^1.18.0",
     "yeoman-generator": "^0.24.1",
