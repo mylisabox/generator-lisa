@@ -36,11 +36,9 @@ Generators:
   Create New L.I.S.A. plugin
     yo lisa:plugin <plugin-name>
 
-  Create New L.I.S.A. plugin Controller
-    yo lisa:controller <controller-name>
+  Create New L.I.S.A. plugin Driver
+    yo lisa:driver <driver-name>
 
-  Create New L.I.S.A. plugin Service
-    yo lisa:service <service-name>
 ```
 
 ## Contributing

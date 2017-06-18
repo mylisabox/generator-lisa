@@ -12,14 +12,14 @@ String.prototype.capitalize = function () {
 }
 
 module.exports = function () {
-  const parts = this['plugin-name'].split(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g)
+  const parts = this.options['plugin-name'].split(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g)
   for (let i = 0; i < parts.length; i++) {
     parts[i] = parts[i].capitalize()
   }
 
   // Copy all files
   this.fs.copyTpl(path.resolve(TEMPLATE, '**', '*'), this.destinationRoot(), {
-    name: this['plugin-name'].toLowerCase(),
+    name: this.options['plugin-name'].toLowerCase(),
     nameNormalized: parts.join()
   })
 

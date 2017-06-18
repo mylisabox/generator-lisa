@@ -1,10 +1,10 @@
 'use strict'
-const yeoman = require('yeoman-generator')
+const Generator = require('yeoman-generator')
 const generatorArguments = require('./arguments')
 const generatorOptions = require('./options')
 const generatorSteps = require('./steps')
 
-module.exports = class ServiceGenerator extends yeoman.Base {
+module.exports = class DriverGenerator extends Generator {
   constructor(arg0, arg1) {
     super(arg0, arg1)
 

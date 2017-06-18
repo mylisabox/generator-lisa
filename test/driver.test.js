@@ -3,24 +3,24 @@ const path = require('path')
 const assert = require('yeoman-assert')
 const test = require('yeoman-test')
 
-describe('lisa:service', () => {
-  describe('Should properly generate service interface', () => {
+describe('lisa:driver', () => {
+  describe('Should properly generate driver interface', () => {
     before(() => {
       return test
-        .run(path.join(__dirname, '../generators/service'))
+        .run(path.join(__dirname, '../generators/driver'))
         .withArguments(['test'])
         .toPromise()
     })
 
-    it('Should properly create service files', () => {
+    it('Should properly create driver files', () => {
       assert.file([
-        'api/services/TestService.js'
+        'drivers/TestDriver.js'
       ])
     })
 
     it('Should properly create test files', () => {
       assert.file([
-        'test/unit/services/TestService.test.js'
+        'test/unit/drivers/TestDriver.test.js'
       ])
     })
   })

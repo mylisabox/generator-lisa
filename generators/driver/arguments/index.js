@@ -15,10 +15,10 @@
  */
 
 module.exports = {
-  'service-name': {
+  'driver-name': {
     type: String,
     required: true,
-    desc: 'Service Name',
-    banner: 'Service Name'
+    desc: 'Driver Name',
+    banner: 'Driver Name'
   }
 }
