@@ -12,7 +12,7 @@ String.prototype.capitalize = function () {
 }
 
 module.exports = function () {
-  const parts = this.options['plugin-name'].split(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g)
+  const parts = this.options['plugin-name'].split(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g) // eslint-disable-line no-useless-escape
   for (let i = 0; i < parts.length; i++) {
     parts[i] = parts[i].capitalize()
   }
