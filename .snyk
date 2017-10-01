@@ -1,5 +1,7 @@
-version: v1.5.2
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
 ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:negotiator:20160616':
     - lisa-plugin > lisa-box > trailpack-realtime > engine.io > accepts > negotiator:
@@ -22,72 +24,77 @@ patch:
   'npm:minimatch:20160620':
     - lisa-box > sqlite3 > node-pre-gyp > tar-pack > rimraf > glob > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar-pack > rimraf > glob > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > sqlite3 > node-pre-gyp > tar-pack > fstream > rimraf > glob > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar-pack > fstream > rimraf > glob > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > sqlite3 > node-pre-gyp > tar-pack > fstream-ignore > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar-pack > fstream-ignore > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > sqlite3 > node-pre-gyp > tar-pack > fstream-ignore > fstream > rimraf > glob > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar-pack > fstream-ignore > fstream > rimraf > glob > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > sqlite3 > node-pre-gyp > tar-pack > tar > fstream > rimraf > glob > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar-pack > tar > fstream > rimraf > glob > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > sqlite3 > node-pre-gyp > tar > fstream > rimraf > glob > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar > fstream > rimraf > glob > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > sqlite3 > node-pre-gyp > rimraf > glob > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > rimraf > glob > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > lisa-plugins-manager > npmi > npm > init-package-json > read-package-json > glob > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > read-installed > read-package-json > glob > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > lisa-plugins-manager > npmi > npm > read-installed > read-package-json > glob > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > read-package-tree > read-package-json > glob > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > lisa-plugins-manager > npmi > npm > read-package-tree > read-package-json > glob > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > init-package-json > read-package-json > glob > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > lisa-plugins-manager > npmi > npm > read-package-json > glob > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > read-package-json > glob > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > lisa-plugins-manager > npmi > npm > fstream-npm > fstream-ignore > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > init-package-json > glob > minimatch:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > lisa-plugins-manager > npmi > npm > init-package-json > glob > minimatch:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > fstream-npm > fstream-ignore > minimatch:
+    - lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar-pack > rimraf > glob > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar-pack > fstream > rimraf > glob > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar-pack > fstream-ignore > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar-pack > fstream-ignore > fstream > rimraf > glob > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar-pack > tar > fstream > rimraf > glob > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > tar > fstream > rimraf > glob > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > rimraf > glob > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > read-installed > read-package-json > glob > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > read-package-tree > read-package-json > glob > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > init-package-json > read-package-json > glob > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > read-package-json > glob > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > init-package-json > glob > minimatch:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > fstream-npm > fstream-ignore > minimatch:
         patched: '2016-08-23T06:51:27.454Z'
   'npm:tough-cookie:20160722':
     - lisa-box > lisa-plugins-manager > npmi > npm > npm-registry-client > request > tough-cookie:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > request > tough-cookie:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > lisa-plugins-manager > npmi > npm > node-gyp > request > tough-cookie:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > npm-registry-client > request > tough-cookie:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > lisa-plugins-manager > npmi > npm > request > tough-cookie:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > node-gyp > request > tough-cookie:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-box > sqlite3 > node-pre-gyp > request > tough-cookie:
         patched: '2016-08-20T13:34:58.126Z'
-      lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > request > tough-cookie:
-        patched: '2016-08-23T06:51:27.454Z'
     - lisa-plugin > lisa-box > serialport > node-pre-gyp > request > tough-cookie:
         patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > sqlite3 > node-pre-gyp > request > tough-cookie:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > npm-registry-client > request > tough-cookie:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > node-gyp > request > tough-cookie:
+        patched: '2016-08-23T06:51:27.454Z'
+    - lisa-plugin > lisa-box > lisa-plugins-manager > npmi > npm > request > tough-cookie:
+        patched: '2016-08-23T06:51:27.454Z'
+  'npm:debug:20170905':
+    - lisa-box > primus-rooms > debug:
+        patched: '2017-10-01T08:57:19.095Z'
+    - lisa-box > trailpack-realtime > engine.io > debug:
+        patched: '2017-10-01T08:57:19.095Z'
