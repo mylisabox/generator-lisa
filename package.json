@@ -22,7 +22,8 @@
     "publishPatch": "npm version patch && npm run push",
     "publishMinor": "npm version minor && npm run push",
     "publishMajor": "npm version major && npm run push",
-    "push": "git push --tags && git push"
+    "push": "git push --tags && git push",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -35,11 +36,11 @@
   "dependencies": {
     "chalk": "^1.1.3",
     "falafel": "^2.1.0",
-    "lisa-box": "^0.0.16",
+    "lisa-box": "^0.0.19",
     "detect-conflict": "^1.0.1",
     "lisa-plugin": "^0.0.13",
     "path-exists": "^3.0.0",
-    "snyk": "^1.34.4",
+    "snyk": "^1.83.0",
     "yeoman-generator": "^1.1.1",
     "yosay": "^2.0.0"
   },
